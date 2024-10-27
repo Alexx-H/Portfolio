@@ -1,1 +1,23 @@
-CS230
+1.	Briefly summarize The Gaming Room client and their software requirements. Who was the client? What type of software did they want you to design?
+
+The Gaming Room requirements were to make a game similar to the old Win Lose or Draw game from TV, but turning it into a web browser game. The software they wanted developed would have been both a client and server side and hosted games for many different clients to play through their browser.
+
+2.	What did you do particularly well in developing this documentation?
+
+I felt like researching the different platforms and comparing them went very well. Though it was a little funny to me researching hosting a server on a mobile platform as that seems a very impractical solution.
+
+3.	What about the process of working through a design document did you find helpful when developing the code?
+
+I found the UME diagram to be useful. This class really helped me understand them and they seem like a great for tracking classes and functions.
+
+4.	If you could choose one part of your work on these documents to revise, what would you pick? How would you improve it?
+
+Probably the requirements section, it was at the beginning of class and I had not has as much time working with the project. I feel like after working on it for 8 weeks I would have an easier time organizing my thoughts there.
+
+5.	How did you interpret the user’s needs and implement them into your software design? Why is it so important to consider the user’s needs when designing?
+
+I interpreted the users needs a little in some sections, specifically when it came to how to do implement the game. There wasn’t much in the way of specific instructions like “if the player does this they should get X” so some of had to be made up along the way.
+
+6.	How did you approach designing software? What techniques or strategies would you use in the future to analyze and design a similar software application?
+
+In the future I would utilize a similar approach. Specifically tracking classes using UML diagrams. It seems like a perfect way to track your classes.
