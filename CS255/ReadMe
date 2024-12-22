@@ -1,1 +1,21 @@
-Folder for CS 255
+Briefly summarize the DriverPass project. Who was the client? What type of system did they want you to design?
+
+The DriverPass project involved analyzing a company through an interview with the owner and their IT manager. They were a startup that tried to take advantage of the lack of training available for people who were trying to pass the DMV tests. The system they wanted to build was one that would be a one stop shop for people who wanted to be able to pass their tests. It would allow people to take online tests like the DMV tests, take online lessons, purchase packages, and schedule road training with their driving instructors.
+
+What did you do particularly well?
+
+I think I did the diagrams particularly well. I enjoyed making them and it really showed me the importance of having a plan for progress from different lenses before moving forward with it. It is something I will definitly take away from this class is to not only diagram, but utilize different diagrams to to show the system from the different sides.
+
+If you could choose one part of your work on these documents to revise, what would you pick? How would you improve it?
+
+If I could revise anything it would be the business requirements document, I would make it a little neater and more organized. I don’t think it is bad per say but I do feel like I could better organize my ideas. Looking through it a second time before uploading made me realize that I tended to just write down ideas into the bullet points as they came to me versus getting several together, organizing, then bulleting.
+
+How did you interpret the user’s needs and implement them into your system design? Why is it so important to consider the user’s needs when designing?
+
+Two areas that I had to put thought into interpreting the needs of the clients were in the profiles and variables. The profiles because they did not specifically say they wanted their driving instructors to be able to make profiles too, but thinking about it seemed like an important thing so the customers would know who was picking them up. Next, they also didn’t mention what information they would be collecting on people for their profiles, so I made the judgment call that it would probably be the basics like Name, address, phone number, and what plans they had purchased. Considering the needs of the client when designing is one of the most important things you can do, because they are the ones who are paying you to get the work done. A good product speaks for itself but having a happy client who can recommend you to others and speak highly of your work will get you future work as well.
+
+How do you approach designing software? What techniques or strategies would you use in the future to analyze and design a system?
+
+How I approach designing software has changed greatly since I started here at SNHU. I used to just jump into the program and try to figure it out as I went. Now though, even when I am working on personal projects, I take the time to draw out and diagram my work because I’ve realized that to properly make a project of some size you need to work from the outside and start with an overview of the entire project. Only then can you see how the individual parts will properly fit together.
+
+
