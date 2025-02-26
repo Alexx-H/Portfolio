@@ -1,1 +1,20 @@
-This is where the assignment in module 8 will go.
+• Briefly summarize your client, Artemis Financial, and its software requirements. Who was the client? What issue did the company want you to address?
+  Artemis Financial was a financial consulting company that develops individualized financial plans. The plans involve savings, retirement, investments and insurance. The issue they wanted us to address was to modernize its operations through using the most current and effective software security. They wanted a file verification step that will utilize a checksum verification for files.
+
+• What did you do well when you found your client’s software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall well-being?
+  The clients vulnerabilities were documented and the major issue was that there was no form of checksum hashing in their code base. As well as no certificate to authenticate the https encryption. I feel like I did well adding both of these functions in. It is important to code securely for several reasons but two of the biggest are that the government requires it with financial institutions, and that it is morally the right thing to do since clients are entrusting their private information to you. The companies over all wellbeing is increased with secure coding because the client doesn't have to worry itself as much about outside attacks. They can comfortably tell their clients they are in good hands, and know that everything is being done to keep the data safe.
+
+• Which part of the vulnerability assessment was challenging or helpful to you?
+  The part of the vulnerability assessment that was most challenging to me was trying to figure out exactly what some of the requirements were looking for. Specifically with the checksum verification, I wasn't sure if it was just a proof of concept or like a full "you can upload data and check sum it" since we hand't really been taught how to do that second part I went with the first, but  it definitely nagged at me for a long time.
+
+• How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
+  I increased the layers of security by adding the hashing function as well as the self-signed certificate. On top of this I used the static dependency tool check if any dependencies were going to cause issues. I also increased the security by being sure there were no areas of blind input from the user that could be vulnerable to SQL injection or other malicious code.
+
+• How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?
+  I checked the code by rerunning the code to make sure the hashing still worked, as well as rerunning the dependency check. Rerunning it allowed me to see if anything new came up, though I knew it wouldn't because the dependencies had not changed.
+
+• What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?
+  Analyzing the code will definitely be helpful in the future. After reading the book I didn't realize just how much an empty string field could open up the system to potential attackers, or how much they can get from just an error bouncing back to them. I will definitely continue to use the security mindset when working with code. Also it was good getting more experience working with the spring framework, I had only experienced that once before but it was definitely interesting.
+
+• Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?
+  I would show them that I understand how to generate checksums and that I know how to create certificates for encrypted transmissions. I feel like that would be a real benefit in the future. It would also help to practice it more on my own after this class to help it solidify more as a skill.
