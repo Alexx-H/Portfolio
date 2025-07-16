@@ -4,7 +4,8 @@ const numofBoids = 120;
 let alignSlider, cohesionSlider, seperationSlider;
 
 function setup() {
-  createCanvas(800, 800);
+  let canvas = createCanvas(800, 800);
+  canvas.parent('sketch-container');
   alignSlider =createSlider(0, 5, 1, 0.1);
   cohesionSlider = createSlider(0, 5, 1, 0.1);
   seperationSlider = createSlider(0, 5, 1, 0.1);
