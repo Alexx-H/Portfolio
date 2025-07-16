@@ -122,14 +122,17 @@ class Boid {
     let alignment = this.align(boids);
     let cohesion = this.cohesion(boids);
     let seperation = this.seperation(boids);
+    let avoidMouse = this.mouseAvoid();
     
     seperation.mult(seperationSlider.value());
     cohesion.mult(cohesionSlider.value());
     alignment.mult(alignSlider.value());
+    avoidMouse.mult(1.5);
     
     this.acceleration.add(alignment);
     this.acceleration.add(cohesion);
     this.acceleration.add(seperation);
+    this.acceleration.add(avoidMouse);
   }
 
   update() {
