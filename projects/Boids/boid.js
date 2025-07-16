@@ -21,6 +21,22 @@ class Boid {
     }
   }
 
+  mouseAvoid() {
+  let perceptionRadius = 75; // how close boids react to the mouse
+  let mouse = createVector(mouseX, mouseY);
+  let d = p5.Vector.dist(this.position, mouse);
+
+  if (d < perceptionRadius) {
+    let diff = p5.Vector.sub(this.position, mouse);
+    diff.setMag(this.maxSpeed);
+    diff.sub(this.velocity);
+    diff.limit(this.maxForce * 2); // make avoidance stronger
+    return diff;
+  } else {
+    return createVector(0, 0);
+  }
+}
+  
   align(boids) {
     let perceptionRadius = 50;
     let steering = createVector();
