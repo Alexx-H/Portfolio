@@ -3,47 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex Hitchens - Portfolio</title>
+  <title>Alex Hitchens - Portfolio!</title>
   <link rel="icon" type="image/png" href="resources/caticon64.png" />
   <style>
     body {
       font-family: sans-serif;
+      text-align: center;
+      background: #f5f5f5;
       margin: 0;
-      background: #eef2f5;
-      color: #333;
+      padding: 0;
     }
     header {
-      background: #4a90e2;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
+      padding: 2rem 1rem 1rem;
     }
-    .avatar {
-      width: 100px;
-      height: 100px;
+    img.caticon {
       border-radius: 50%;
-      border: 3px solid white;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       margin-bottom: 1rem;
     }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .sketch-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
     }
     iframe {
-      width: 100%;
+      width: 400px;
       height: 400px;
       border: none;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
-    }
-    .projects a {
-      display: block;
-      padding: 1rem;
-      margin: 0.5rem 0;
-      background: white;
-      text-align: center;
       border-radius: 8px;
-      text-decorat
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    ul.links {
+      list-style: none;
+      padding: 0;
+    }
+    ul.links li {
+      margin: 0.5rem 0;
+    }
+    ul.links a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+    ul.links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="resources/caticon.png" alt="Cat Icon" class="caticon" />
+    <h1>Alex</h1>
+    <p>Welcome to my Temporary GitHub page!</p>
+  </header>
+
+  <section class="sketch-container">
+    <iframe src="https://prismaticmoon.github.io/P5-Funky-Cubes/"></iframe>
+  </section>
+
+  <section>
+    <h2>Other Sketches</h2>
+    <ul class="links">
+      <li><a href="https://prismaticmoon.github.io/P5-Funky-Cubes/">Funky Cubes</a></li>
+      <li><a href="projects/raycasting2D/index.html">Raycasting In 2 Dimensions!</a></li>
+      <li><a href="projects/Boids/index.html">Boids!</a></li>
+    </ul>
+  </section>
+</body>
+</html>
