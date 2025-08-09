@@ -245,7 +245,19 @@
           <!-- Project 1 -->
           <a href="https://prismaticmoon.github.io/Portfolio/projects/Boids/index.html" class="reveal group rounded-2xl overflow-hidden border border-slate-900/10 dark:border-white/10 bg-white/60 dark:bg-slate-950/60 backdrop-blur shadow-glow block" target="_blank" rel="noopener noreferrer">
             <div class="relative aspect-video w-full bg-slate-100 dark:bg-slate-900 flex items-center justify-center">
-              <span class="text-xs text-slate-500">Add screenshot later</span>
+              <span class="text-xs text-slate-500">
+              <!-- Inside your project tile's top div -->
+                <div class="relative aspect-video w-full bg-slate-100 dark:bg-slate-900">
+                  <img
+                    src="/assets/gifs/boids.gif"
+                    alt="Boids demo preview"
+                    class="absolute inset-0 h-full w-full object-cover"
+                    loading="lazy"
+                    />
+                    <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-slate-950/40 via-transparent to-transparent"></div>
+                  </div>
+  
+              </span>
             </div>
             <div class="p-5">
               <div class="flex items-center justify-between">
@@ -430,4 +442,5 @@
     -->
   </body>
 </html>
+
 
