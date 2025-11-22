@@ -178,10 +178,10 @@ class Boid {
       pressureLevel < 0.5
         ? lerpColor(green, blue, pressureLevel / 0.5)
         : lerpColor(blue, red, (pressureLevel - 0.5) / 0.5);
-    strokeWeight(8);
+    strokeWeight(16);
     stroke(pressureColor);
     point(this.position.x, this.position.y);
-    strokeWeight(3);
+    strokeWeight(6);
     stroke(pressureColor);
     line(this.position.x, this.position.y, x2, y2);
   }
