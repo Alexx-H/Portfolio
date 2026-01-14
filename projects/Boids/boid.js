@@ -9,6 +9,7 @@ class Boid {
     this.pressure = 0;
   }
 
+  // check the edges and teleport as needed
   edges() {
     if (this.position.x > width) {
       this.position.x = 0;
@@ -22,6 +23,7 @@ class Boid {
     }
   }
 
+  // calculate a force to push away from the mouse
   mouseAvoid() {
     let perceptionRadius = 75; // how close boids react to the mouse
     let mouse = createVector(mouseX, mouseY);
@@ -37,7 +39,8 @@ class Boid {
 
     return createVector(0, 0);
   }
-  
+
+  // returns a steering that is pushing the boid to the averarage direction of flock mates
   align(boids) {
     let perceptionRadius = 50;
     let steering = createVector();
@@ -64,6 +67,7 @@ class Boid {
     return steering;
   }
 
+  // return a steering to seperate from boids that are too close
   seperation(boids) {
     let perceptionRadius = 50;
     let steering = createVector();
@@ -92,6 +96,7 @@ class Boid {
     return steering;
   }
 
+  // return steering to keep boid close to other boids
   cohesion(boids) {
     let perceptionRadius = 50;
     let steering = createVector();
@@ -119,6 +124,7 @@ class Boid {
     return steering;
   }
 
+  // get how crowded the boid is
   calculatePressure(boids) {
     let perceptionRadius = 60;
     let closeness = 0;
@@ -140,6 +146,7 @@ class Boid {
     this.pressure = total > 0 ? closeness / total : 0;
   }
 
+  // calculate all the foces on the boid
   flock(boids) {
     let alignment = this.align(boids);
     let cohesion = this.cohesion(boids);
@@ -159,6 +166,7 @@ class Boid {
     this.calculatePressure(boids);
   }
 
+  // make incremental change to the boid position and speed
   update() {
     this.position.add(this.velocity);
     this.velocity.add(this.acceleration);
@@ -166,6 +174,7 @@ class Boid {
     this.acceleration.mult(0);
   }
 
+  // show the boid
   show() {
     let magni = 5;
     let x2 = this.position.x + this.velocity.x * magni;
