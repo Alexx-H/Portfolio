@@ -9,7 +9,6 @@ let debugOctTreeBox;
 let text1
 let text2
 let text3
-let test
 function setup() {
   createCanvas(1200, 800, WEBGL);
   
@@ -125,7 +124,6 @@ function createUI() {
   text3 = createP('Seperation');
   text3.style('color', 'white');
   text3.position(600, 10);
-  test= createP('rect(50,50,50,50)')
   
   
   cohesionSlider = createSlider(0, 5, 1, 0.1);
