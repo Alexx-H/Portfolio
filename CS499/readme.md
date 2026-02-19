@@ -47,7 +47,7 @@ This portfolio highlights three projects that collectively demonstrate my techni
 # 1️⃣ Boids Project  
 *Software Engineering & Computational Graphics Enhancement*
 
-![Boids Project Screenshot](images/boids-placeholder.png)
+![Boids Project Screenshot](/CS499/Project1/boidsimage.png)
 
 ### 📄 Project Description
 A simulation of flocking behavior using autonomous agents (boids) implementing separation, alignment, and cohesion behaviors.
@@ -58,9 +58,14 @@ A simulation of flocking behavior using autonomous agents (boids) implementing s
 - Added spatial partitioning (Octree optimization)  
 - Improved documentation and inline commenting  
 
+### 🤖
+- [Try Enhanced Version Here](https://alexx-h.github.io/Portfolio/CS499/Project1/index.html)
+- [Try Original Version Here](https://alexx-h.github.io/Portfolio/CS499/Project1/OriginalProject/index.html)
+
 ### 📁 Files
-- [Original Boids Project](projects/boids/original/)
-- [Enhanced Boids Project](projects/boids/enhanced/)
+- [Original Boids Project](/CS499/Project1/OriginalProject)
+- [Original Boids Project](/CS499/Project1/OriginalProject)
+- [Enhanced Boids Project](/CS499/Project1)
 - [Boids Narrative (Word Doc)](projects/boids/narrative.docx)
 - [Boids Code Review Video](https://youtube.com/dummy-link)
 
