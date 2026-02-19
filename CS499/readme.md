@@ -92,8 +92,8 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 - Improved UI feedback and user interaction flow  
 
 ### 📁 Files
-- [Original Data Structure Race](projects/data-structures/original/)
-- [Enhanced Data Structure Race](projects/data-structures/enhanced/)
+- [Original Data Structure Race](/CS499/Project2/OriginalProject)
+- [Enhanced Data Structure Race](/CS499/Project2)
 - [Data Structure Race Narrative](projects/data-structures/narrative.docx)
 - [Data Structure Race Code Review](https://youtu.be/nbGleAeoDRc)
 
@@ -118,8 +118,8 @@ A Raspberry Pi–based temperature logging system using:
 - Improved data validation and error handling  
 
 ### 📁 Files
-- [Original Temperature Project](projects/temperature/original/)
-- [Enhanced Temperature Project](projects/temperature/enhanced/)
+- [Original Temperature Project](/CS499/Project3/OriginalProject)
+- [Enhanced Temperature Project](/CS499/Project3/)
 - [Temperature Project Narrative](projects/temperature/narrative.docx)
 - [Temperature Project Code Review](https://youtube.com/shorts/TVPL5t-ybPo)
 
