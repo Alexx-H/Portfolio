@@ -1,0 +1,197 @@
+class Boid {
+  constructor() {
+    this.position = createVector(random(width), random(height));
+    this.velocity = p5.Vector.random2D();
+    this.velocity.setMag(random(2, 4));
+    this.acceleration = createVector();
+    this.maxForce = .2;
+    this.maxSpeed = 4;
+    this.pressure = 0;
+  }
+
+  // check the edges and teleport as needed
+  edges() {
+    if (this.position.x > width) {
+      this.position.x = 0;
+    } else if (this.position.x < 0) {
+      this.position.x = width;
+    }
+    if (this.position.y > height) {
+      this.position.y = 0;
+    } else if (this.position.y < 0) {
+      this.position.y = height;
+    }
+  }
+
+  // calculate a force to push away from the mouse
+  mouseAvoid() {
+    let perceptionRadius = 75; // how close boids react to the mouse
+    let mouse = createVector(mouseX, mouseY);
+    let d = p5.Vector.dist(this.position, mouse);
+
+    if (d < perceptionRadius) {
+      let diff = p5.Vector.sub(this.position, mouse);
+      diff.setMag(this.maxSpeed);
+      diff.sub(this.velocity);
+      diff.limit(this.maxForce * 2); // make avoidance stronger
+      return diff;
+    }
+
+    return createVector(0, 0);
+  }
+
+  // returns a steering that is pushing the boid to the averarage direction of flock mates
+  align(boids) {
+    let perceptionRadius = 50;
+    let steering = createVector();
+    let total = 0;
+
+    for (let other of boids) {
+      let d = dist(
+        this.position.x,
+        this.position.y,
+        other.position.x,
+        other.position.y
+      );
+      if (other != this && d < perceptionRadius) {
+        steering.add(other.velocity);
+        total++;
+      }
+    }
+    if (total > 0) {
+      steering.div(total);
+      steering.setMag(this.maxSpeed);
+      steering.sub(this.velocity);
+      steering.limit(this.maxForce);
+    }
+    return steering;
+  }
+
+  // return a steering to seperate from boids that are too close
+  seperation(boids) {
+    let perceptionRadius = 50;
+    let steering = createVector();
+    let total = 0;
+
+    for (let other of boids) {
+      let d = dist(
+        this.position.x,
+        this.position.y,
+        other.position.x,
+        other.position.y
+      );
+      if (other != this && d < perceptionRadius) {
+        let diff = p5.Vector.sub(this.position, other.position);
+        diff.div(d);
+        steering.add(diff);
+        total++;
+      }
+    }
+    if (total > 0) {
+      steering.div(total);
+      steering.setMag(this.maxSpeed);
+      steering.sub(this.velocity);
+      steering.limit(this.maxForce);
+    }
+    return steering;
+  }
+
+  // return steering to keep boid close to other boids
+  cohesion(boids) {
+    let perceptionRadius = 50;
+    let steering = createVector();
+    let total = 0;
+
+    for (let other of boids) {
+      let d = dist(
+        this.position.x,
+        this.position.y,
+        other.position.x,
+        other.position.y
+      );
+      if (other != this && d < perceptionRadius) {
+        steering.add(other.position);
+        total++;
+      }
+    }
+    if (total > 0) {
+      steering.div(total);
+      steering.sub(this.position);
+      steering.setMag(this.maxSpeed);
+      steering.sub(this.velocity);
+      steering.limit(this.maxForce);
+    }
+    return steering;
+  }
+
+  // get how crowded the boid is
+  calculatePressure(boids) {
+    let perceptionRadius = 60;
+    let closeness = 0;
+    let total = 0;
+
+    for (let other of boids) {
+      let d = dist(
+        this.position.x,
+        this.position.y,
+        other.position.x,
+        other.position.y
+      );
+      if (other !== this && d < perceptionRadius) {
+        closeness += 1 - d / perceptionRadius;
+        total++;
+      }
+    }
+
+    this.pressure = total > 0 ? closeness / total : 0;
+  }
+
+  // calculate all the foces on the boid
+  flock(boids) {
+    let alignment = this.align(boids);
+    let cohesion = this.cohesion(boids);
+    let seperation = this.seperation(boids);
+    let avoidMouse = this.mouseAvoid();
+    
+    seperation.mult(seperationSlider.value());
+    cohesion.mult(cohesionSlider.value());
+    alignment.mult(alignSlider.value());
+    avoidMouse.mult(1.5);
+
+    this.acceleration.add(alignment);
+    this.acceleration.add(cohesion);
+    this.acceleration.add(seperation);
+    this.acceleration.add(avoidMouse);
+
+    this.calculatePressure(boids);
+  }
+
+  // make incremental change to the boid position and speed
+  update() {
+    this.position.add(this.velocity);
+    this.velocity.add(this.acceleration);
+    this.velocity.limit(this.maxSpeed);
+    this.acceleration.mult(0);
+  }
+
+  // show the boid
+  show() {
+    let magni = 5;
+    let x2 = this.position.x + this.velocity.x * magni;
+    let y2 = this.position.y + this.velocity.y * magni;
+    let green = color(80, 200, 120);
+    let blue = color(80, 170, 255);
+    let red = color(255, 80, 80);
+    let pressureLevel = constrain(this.pressure, 0, 1);
+    let pressureColor =
+      pressureLevel < 0.5
+        ? lerpColor(green, blue, pressureLevel / 0.5)
+        : lerpColor(blue, red, (pressureLevel - 0.5) / 0.5);
+    strokeWeight(16);
+    stroke(pressureColor);
+    point(this.position.x, this.position.y);
+    strokeWeight(6);
+    stroke(pressureColor);
+    line(this.position.x, this.position.y, x2, y2);
+  }
+}
