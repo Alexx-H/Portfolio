@@ -58,7 +58,7 @@ A simulation of flocking behavior using autonomous agents (boids) implementing s
 - Added spatial partitioning (Octree optimization)  
 - Improved documentation and inline commenting  
 
-### 🤖
+### 🤖 P5.js Versions
 - [Try Enhanced Version Here](https://alexx-h.github.io/Portfolio/CS499/Project1/index.html)
 - [Try Original Version Here](https://alexx-h.github.io/Portfolio/CS499/Project1/OriginalProject/index.html)
 
@@ -67,7 +67,7 @@ A simulation of flocking behavior using autonomous agents (boids) implementing s
 - [Original Boids Project](/CS499/Project1/OriginalProject)
 - [Enhanced Boids Project](/CS499/Project1)
 - [Boids Narrative (Word Doc)](projects/boids/narrative.docx)
-- [Boids Code Review Video](https://youtube.com/dummy-link)
+- [Boids Code Review Video](https://youtu.be/SEwYmnbKnE4)
 
 ---
 
@@ -95,7 +95,7 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 - [Original Data Structure Race](projects/data-structures/original/)
 - [Enhanced Data Structure Race](projects/data-structures/enhanced/)
 - [Data Structure Race Narrative](projects/data-structures/narrative.docx)
-- [Data Structure Race Code Review](https://youtube.com/dummy-link)
+- [Data Structure Race Code Review](https://youtu.be/nbGleAeoDRc)
 
 ---
 
@@ -121,7 +121,7 @@ A Raspberry Pi–based temperature logging system using:
 - [Original Temperature Project](projects/temperature/original/)
 - [Enhanced Temperature Project](projects/temperature/enhanced/)
 - [Temperature Project Narrative](projects/temperature/narrative.docx)
-- [Temperature Project Code Review](https://youtube.com/dummy-link)
+- [Temperature Project Code Review](https://youtube.com/shorts/TVPL5t-ybPo)
 
 ---
 
