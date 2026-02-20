@@ -74,7 +74,7 @@ A simulation of flocking behavior using autonomous agents (boids) implementing s
 # 2️⃣ Data Structure Race Project  
 *Algorithms & Data Structures Enhancement*
 
-![Data Structure Race Screenshot](images/data-structure-race-placeholder.png)
+![Data Structure Race Screenshot](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project2/project2.png)
 
 ### 📄 Project Description
 An interactive application comparing performance between:
@@ -92,7 +92,7 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 - Improved UI feedback and user interaction flow  
 
 ### 🤖 P5.js Versions
-- [Try Enhanced Version Here][(https://alexx-h.github.io/Portfolio/CS499/Project2/index.html)
+- [Try Enhanced Version Here](https://alexx-h.github.io/Portfolio/CS499/Project2/index.html)
 
 
 
