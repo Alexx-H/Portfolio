@@ -99,7 +99,7 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 ### 📁 Files
 - [Original Data Structure Race](/CS499/Project2/OriginalProject)
 - [Enhanced Data Structure Race](/CS499/Project2)
-- [Data Structure Race Narrative](projects/data-structures/narrative.docx)
+- [Data Structure Race Narrative](CS499/Project2/Narrative)
 - [Data Structure Race Code Review](https://youtu.be/nbGleAeoDRc)
 
 ---
@@ -125,7 +125,7 @@ A Raspberry Pi–based temperature logging system using:
 ### 📁 Files
 - [Original Temperature Project](/CS499/Project3/OriginalProject)
 - [Enhanced Temperature Project](/CS499/Project3/)
-- [Temperature Project Narrative](projects/temperature/narrative.docx)
+- [Temperature Project Narrative](CS499/Project3/Narrative)
 - [Temperature Project Code Review](https://youtube.com/shorts/TVPL5t-ybPo)
 
 ---
