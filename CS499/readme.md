@@ -1,10 +1,10 @@
-# 💻 CS 499 – Computer Science Capstone ePortfolio  
+#  CS 499 – Computer Science Capstone ePortfolio  
 **Alex Hitchens**  
 Bachelor of Science in Computer Science  
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This professional ePortfolio represents the culmination of my work in the Computer Science program. It demonstrates my growth across three core areas of computer science:
 
@@ -12,7 +12,9 @@ This professional ePortfolio represents the culmination of my work in the Comput
 - Algorithms and Data Structures  
 - Databases  
 
-Each artifact included in this portfolio contains:
+What follows is my Professional Self-Assessment, followed by 3 projects:
+
+Each project included in this portfolio contains:
 - The **original submission**
 - The **enhanced version**
 - A **written narrative reflection**
@@ -21,7 +23,7 @@ Each artifact included in this portfolio contains:
 
 ---
 
-# 🧑‍💼 Professional Self-Assessment
+#  Professional Self-Assessment
 
 ---
 
@@ -84,16 +86,14 @@ These three projects are more than individual coursework over many years; they r
 
 ![Boids Project Screenshot](/CS499/Project1/boidsimage.png)
 
-### 📄 Project Description
+###  Project Description
 A simulation of flocking behavior using autonomous agents (boids) implementing separation, alignment, and cohesion behaviors.
-
-### 🔁 Enhancement Focus
-- Refactored architecture for modular design  
 - Improved physics modeling and movement smoothing  
 - Added spatial partitioning (Octree optimization)  
-- Improved documentation and inline commenting  
+- Added 3 Dimsionality
+- Added Object Avoidence
 
-### 🤖 P5.js Versions
+###  P5.js Versions
 - [Try Enhanced Version Here](https://alexx-h.github.io/Portfolio/CS499/Project1/index.html)
 - [Try Original Version Here](https://alexx-h.github.io/Portfolio/CS499/Project1/OriginalProject/index.html)
 
@@ -110,22 +110,16 @@ A simulation of flocking behavior using autonomous agents (boids) implementing s
 
 ![Data Structure Race Screenshot](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project2/project2.png)
 
-### 📄 Project Description
+###  Project Description
 An interactive application comparing performance between:
-- Binary Search Tree (BST)
-- Ordered Linked List (OLL)
-- Modulo-16 Hash Table (with unordered linked list buckets)
+- Improved Binary Search Tree (BST)
+- Added Ordered Linked List (OLL)
+- Added Modulo-16 Hash Table (with unordered linked list buckets)
+- Added Data Visual Representation
 
 Each operation (add/delete/find) tracks comparison steps and displays performance results.
 
-### 🔁 Enhancement Focus
-- Improved step-counting instrumentation  
-- Optimized hash collision handling  
-- Refactored structure implementations for clarity  
-- Added input validation and constraints  
-- Improved UI feedback and user interaction flow  
-
-### 🤖 P5.js Versions
+###  P5.js Versions
 - [Try Enhanced Version Here](https://alexx-h.github.io/Portfolio/CS499/Project2/index.html)
 
 
@@ -141,23 +135,17 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 # 3️⃣ Networked Temperature Database & Interface  
 *Database & Full-Stack Enhancement*
 
-![Temperature Database Screenshot](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project3/image.png)
-
 ---
 ![Project 3 Demo](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project3/uigif.gif)
 ---
-### 📄 Project Description
+![Project 3 Demo](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project3/commandline.gif)
+---
+###  Project Description
 A Raspberry Pi–based temperature logging system using:
-- Sensor data collection
-- MongoDB database storage
-- Web-based interface for querying and visualization
+- Added Sensor data collection to Database
+- MongoDB database Security Implented
+- Added Data Visualization GUI
 
-### 🔁 Enhancement Focus
-- Improved MongoDB schema design  
-- Added indexing for performance optimization  
-- Implemented secure database access practices  
-- Enhanced front-end visualization  
-- Improved data validation and error handling  
 
 ### 📁 Files
 - [Original Temperature Project](/CS499/Project3/OriginalProject)
@@ -170,9 +158,9 @@ A Raspberry Pi–based temperature logging system using:
 
 # 📬 Contact
 
-**[Your Name]**  
-[LinkedIn Profile](https://linkedin.com/in/your-profile)  
-[GitHub Profile](https://github.com/your-username)  
-Email: your.email@example.com  
+**Alex Hitchens**  
+[LinkedIn Profile](https://www.linkedin.com/in/alexander-hitchens/)
+ 
+Email: hitchens360@gmail.com.com  
 
 ---
