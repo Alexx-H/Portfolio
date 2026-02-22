@@ -141,8 +141,11 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 # 3️⃣ Networked Temperature Database & Interface  
 *Database & Full-Stack Enhancement*
 
-![Temperature Database Screenshot](images/temperature-db-placeholder.png)
-
+![Temperature Database Screenshot](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project3/image.png)
+<video width="720" controls preload="metadata">
+  <source src="CS499/Project3/userinterface.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ### 📄 Project Description
 A Raspberry Pi–based temperature logging system using:
 - Sensor data collection
