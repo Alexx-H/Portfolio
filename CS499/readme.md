@@ -142,10 +142,10 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 *Database & Full-Stack Enhancement*
 
 ![Temperature Database Screenshot](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project3/image.png)
-<video width="720" controls preload="metadata">
-  <source src="CS499/Project3/userinterface.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+---
+![Project 3 Demo](https://github.com/Alexx-H/Portfolio/blob/main/CS499/Project3/uigif.gif)
+---
 ### 📄 Project Description
 A Raspberry Pi–based temperature logging system using:
 - Sensor data collection
