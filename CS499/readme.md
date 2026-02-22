@@ -18,7 +18,6 @@ Each artifact included in this portfolio contains:
 - A **written narrative reflection**
 - A **code review video** analyzing the original implementation  
 
-This portfolio aligns with the *CS 499 Final Project Guidelines and Rubric* :contentReference[oaicite:1]{index=1} and showcases my technical growth, design decisions, and professional development.
 
 ---
 
@@ -130,45 +129,6 @@ A Raspberry Pi–based temperature logging system using:
 
 ---
 
-# 🎥 Code Review Overview
-
-Each project includes a recorded code review that:
-
-- Walks through original functionality  
-- Identifies structural and efficiency improvements  
-- Discusses planned enhancements  
-- Aligns improvements to course outcomes  
-
-Code reviews are intended for a peer or managerial audience and demonstrate my ability to communicate technical decisions clearly and professionally.
-
----
-
-# 🛠 Technical Skills Demonstrated
-
-- Object-Oriented Programming  
-- Data Structures & Algorithm Optimization  
-- Database Design (SQL & NoSQL)  
-- MongoDB & Indexing  
-- Software Refactoring  
-- Secure Coding Practices  
-- Performance Analysis  
-- UI/UX Design Principles  
-- Full-Stack Integration  
-- Code Review & Documentation  
-
----
-
-# 🔐 Security & Best Practices
-
-Across all enhancements, I incorporated:
-
-- Input validation  
-- Defensive programming  
-- Error handling improvements  
-- Secure database interaction  
-- Architectural improvements for maintainability  
-
----
 
 # 📬 Contact
 
