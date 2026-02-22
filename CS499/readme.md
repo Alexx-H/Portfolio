@@ -20,6 +20,18 @@ Each project included in this portfolio contains:
 - A **written narrative reflection**
 - A **code review video** analyzing the original implementation  
 
+These projects cover all 5 course outcomes for the capstone class which are:
+
+-"Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science"
+
+-"Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts"
+
+-"Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices"
+
+-"Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals"
+
+-"Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources"
+
 
 ---
 
@@ -77,7 +89,7 @@ These three projects are more than individual coursework over many years; they r
 
 ---
 
-# 🚀 Capstone Artifacts
+#  Capstone Artifacts
 
 ---
 
@@ -90,8 +102,8 @@ These three projects are more than individual coursework over many years; they r
 A simulation of flocking behavior using autonomous agents (boids) implementing separation, alignment, and cohesion behaviors.
 - Improved physics modeling and movement smoothing  
 - Added spatial partitioning (Octree optimization)  
-- Added 3 Dimsionality
-- Added Object Avoidence
+- Added 3 Dimensionality
+- Added Object Avoidance
 
 ###  P5.js Versions
 - [Try Enhanced Version Here](https://alexx-h.github.io/Portfolio/CS499/Project1/index.html)
@@ -143,7 +155,7 @@ Each operation (add/delete/find) tracks comparison steps and displays performanc
 ###  Project Description
 A Raspberry Pi–based temperature logging system using:
 - Added Sensor data collection to Database
-- MongoDB database Security Implented
+- MongoDB database Security Implemented
 - Added Data Visualization GUI
 
 
