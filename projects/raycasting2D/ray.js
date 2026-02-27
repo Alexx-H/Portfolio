@@ -3,6 +3,7 @@ class Ray{
   constructor(pos, angle){
     this.pos = pos;
     this.dir = p5.Vector.fromAngle(angle);
+    this.length = 0;
   }
   
   //set the direction
@@ -47,6 +48,7 @@ class Ray{
       const pt = createVector();
       pt.x = x1 + t * (x2 - x1);
       pt.y = y1 + t * (y2 - y1);
+      this.length = pt.mag();
       return pt;
     } else return;
     
